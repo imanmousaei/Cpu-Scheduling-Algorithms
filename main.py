@@ -102,8 +102,8 @@ def findWaitingTime(processes, n, wt):
 			fint = t + 1
 
 			# Calculate waiting time
-			wt[short] = (fint - proc[short][1] -
-								proc[short][2])
+			wt[short] = (fint - processes[short][1] -
+								processes[short][2])
 
 			if (wt[short] < 0):
 				wt[short] = 0
